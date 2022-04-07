@@ -1,33 +1,14 @@
 {
-  "volante":[
-    {
-        "id": 40002313,
-        "idWeb": "400023-13",
-        "repcodigo": "400023",
-        "repnombre": "CESAR AUGUSTO GERMOSEN BA",
-        "devsecuencia": 13,
-        "cliid": 800094,
-        "clinombre": "FARMACIA JOSEFINA    ",
-        "devfecha": "2019-01-15T09:35:45Z",
-        "devestatus": "20",
-        "estdescripcion": "En Espera de Respuesta HANA",
-        "devtotal": 5,
-        "canal": "20",
-        "nohana": "1500002035",
-        "proid": 1100174,
-        "prodescripcion": "COROVAL B 5-20 mg / 30 CAP",
-        "devcantidad": 1,
-        "devcantidaddetalle": 0,
-        "devdocumento": "0",
-        "motid": 2,
-        "motdescripcion": "Vencido",
-        "devlote": "VD10",
-        "devindicadoroferta": "False",
-        "devposicion": 1,
-        "vencimiento": "2020-04-01T00:00:00Z",
-        "cantdetalle": 5,
-        "mensaje": ""
-      }
-  ]
-
+  "Post": {
+    "title": { "string": {} },
+    "comments": {
+      "hasMany": "Comment"
+    }
+  },
+  "Comment": {
+    "body": { "string": {} },
+    "post": {
+      "belongsTo": "Post"
+    }
+  }
 }
